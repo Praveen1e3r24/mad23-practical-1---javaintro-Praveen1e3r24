@@ -1,23 +1,24 @@
+
 import java.util.Scanner;
 
 public class Question4
 {
-  public static void main(String[] args)
-  {
-    /**
-     * Prints a right angle triangle with *. The base of the triangle depends on the integer given.
-     *    e.g.
-     *     > 5
-     *     *****
-     *     ****
-     *     ***
-     *     **
-     *     *
-     * 
-     * Hint: 2 loops are required. System.out.print(...) to print on single line.
-     */
-     
-    Scanner in = new Scanner(System.in);
+public static void main(String[] args) {
+  
+    Scanner myobj = new Scanner(System.in);
+     System.out.println("Enter integer");
+       
+    int integer = myobj.nextInt();
     
+   String str="*";
+   while(integer>0){
+     int x=integer;
+    while(x >0){
+      System.out.print(str);
+        x--;
+    }    
+     System.out.println();
+     integer--;
+  }
   }
 }
